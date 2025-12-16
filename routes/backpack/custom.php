@@ -16,6 +16,8 @@ Route::group([
     ),
     'namespace' => 'App\Http\Controllers\Admin',
 ], function () { // custom admin routes
+    Route::crud('open-door-session', 'OpenDoorSessionCrudController');
+    Route::crud('open-door-registration', 'OpenDoorRegistrationCrudController');
 }); // this should be the absolute last line of this file
 
 /**

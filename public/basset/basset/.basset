@@ -214,5 +214,68 @@
         "asset_disk_path": "basset/www.gravatar.com/avatar/c84fad8284640e46a3343ac8f77acdd137f54eb93cc2b1ceec8ecf073eb3d833.jpg",
         "asset_attributes": [],
         "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/urijs@1.19.11/src/URI.min.js": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/urijs@1.19.11/src/URI.min.js",
+        "asset_path": "https://cdn.jsdelivr.net/npm/urijs@1.19.11/src/URI.min.js",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/urijs@1.19.11/src/URI.min.js",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.datatables.net/2.1.8/js/dataTables.min.js": {
+        "asset_name": "https://cdn.datatables.net/2.1.8/js/dataTables.min.js",
+        "asset_path": "https://cdn.datatables.net/2.1.8/js/dataTables.min.js",
+        "asset_disk_path": "basset/cdn.datatables.net/2.1.8/js/dataTables.min.js",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.min.js": {
+        "asset_name": "https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.min.js",
+        "asset_path": "https://cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.min.js",
+        "asset_disk_path": "basset/cdn.datatables.net/2.1.8/js/dataTables.bootstrap5.min.js",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.datatables.net/responsive/3.0.3/js/dataTables.responsive.min.js": {
+        "asset_name": "https://cdn.datatables.net/responsive/3.0.3/js/dataTables.responsive.min.js",
+        "asset_path": "https://cdn.datatables.net/responsive/3.0.3/js/dataTables.responsive.min.js",
+        "asset_disk_path": "basset/cdn.datatables.net/responsive/3.0.3/js/dataTables.responsive.min.js",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.datatables.net/fixedheader/4.0.1/js/dataTables.fixedHeader.min.js": {
+        "asset_name": "https://cdn.datatables.net/fixedheader/4.0.1/js/dataTables.fixedHeader.min.js",
+        "asset_path": "https://cdn.datatables.net/fixedheader/4.0.1/js/dataTables.fixedHeader.min.js",
+        "asset_disk_path": "basset/cdn.datatables.net/fixedheader/4.0.1/js/dataTables.fixedHeader.min.js",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "C:\\wamp64\\www\\jaume-balmes-backend\\vendor/backpack/crud/src/resources/assets/img/spinner.svg": {
+        "asset_name": "C:\\wamp64\\www\\jaume-balmes-backend\\vendor/backpack/crud/src/resources/assets/img/spinner.svg",
+        "asset_path": "C:\\wamp64\\www\\jaume-balmes-backend\\vendor/backpack/crud/src/resources/assets/img/spinner.svg",
+        "asset_disk_path": "basset/vendor/backpack/crud/src/resources/assets/img/spinner.svg",
+        "asset_attributes": [],
+        "asset_content_hash": "0a6bee92"
+    },
+    "https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.min.css": {
+        "asset_name": "https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.min.css",
+        "asset_path": "https://cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.min.css",
+        "asset_disk_path": "basset/cdn.datatables.net/2.1.8/css/dataTables.bootstrap5.min.css",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.datatables.net/responsive/3.0.3/css/responsive.dataTables.min.css": {
+        "asset_name": "https://cdn.datatables.net/responsive/3.0.3/css/responsive.dataTables.min.css",
+        "asset_path": "https://cdn.datatables.net/responsive/3.0.3/css/responsive.dataTables.min.css",
+        "asset_disk_path": "basset/cdn.datatables.net/responsive/3.0.3/css/responsive.dataTables.min.css",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.datatables.net/fixedheader/4.0.1/css/fixedHeader.dataTables.min.css": {
+        "asset_name": "https://cdn.datatables.net/fixedheader/4.0.1/css/fixedHeader.dataTables.min.css",
+        "asset_path": "https://cdn.datatables.net/fixedheader/4.0.1/css/fixedHeader.dataTables.min.css",
+        "asset_disk_path": "basset/cdn.datatables.net/fixedheader/4.0.1/css/fixedHeader.dataTables.min.css",
+        "asset_attributes": [],
+        "asset_content_hash": ""
     }
 }
