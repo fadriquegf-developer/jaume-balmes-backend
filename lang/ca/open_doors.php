@@ -122,4 +122,15 @@ return [
     'cancelled_title' => 'Reserva cancel·lada',
     'cancelled_message' => 'La teva reserva ha estat cancel·lada. La plaça ha quedat disponible per a altres famílies.',
     'cancelled_new_registration' => 'Fer una nova inscripció',
+
+    // Exportació
+    'export' => 'Exportar',
+    'export_all' => 'Exportar tot',
+    'export_filtered' => 'Exportar amb filtres',
+    'all_sessions' => 'Totes les sessions',
+    'all_statuses' => 'Tots els estats',
+    'date_from' => 'Data des de',
+    'date_to' => 'Data fins',
+    'cancel' => 'Cancel·lar',
+    'download_excel' => 'Descarregar Excel',
 ];

@@ -19,6 +19,7 @@ class OpenDoorRegistrationCrudController extends CrudController
         CRUD::setModel(\App\Models\OpenDoorRegistration::class);
         CRUD::setRoute(config('backpack.base.route_prefix') . '/open-door-registration');
         CRUD::setEntityNameStrings(__('open_doors.registration'), __('open_doors.registrations'));
+        CRUD::addButtonFromView('top', 'export', 'export_button', 'beginning');
     }
 
     protected function setupListOperation()
@@ -264,5 +265,23 @@ class OpenDoorRegistrationCrudController extends CrudController
         CRUD::column('comments')->label(__('open_doors.comments'));
         CRUD::column('confirmed_at')->label(__('open_doors.confirmed_at'));
         CRUD::column('attended_at')->label(__('open_doors.attended_at'));
+    }
+
+    /**
+     * Exportar a Excel
+     */
+    public function export()
+    {
+        $sessionId = request('open_door_session_id');
+        $status = request('status');
+        $dateFrom = request('date_from');
+        $dateTo = request('date_to');
+
+        $filename = 'inscripcions_portes_obertes_' . now()->format('Y-m-d_His') . '.xlsx';
+
+        return Excel::download(
+            new OpenDoorRegistrationsExport($sessionId, $status, $dateFrom, $dateTo),
+            $filename
+        );
     }
 }

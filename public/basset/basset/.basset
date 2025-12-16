@@ -277,5 +277,509 @@
         "asset_disk_path": "basset/cdn.datatables.net/fixedheader/4.0.1/css/fixedHeader.dataTables.min.css",
         "asset_attributes": [],
         "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/summernote@0.9.1/dist/summernote-lite.min.css": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/summernote@0.9.1/dist/summernote-lite.min.css",
+        "asset_path": "https://cdn.jsdelivr.net/npm/summernote@0.9.1/dist/summernote-lite.min.css",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/summernote@0.9.1/dist/summernote-lite.min.css",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/summernote@0.9.1/dist/font/summernote.woff2": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/summernote@0.9.1/dist/font/summernote.woff2",
+        "asset_path": "https://cdn.jsdelivr.net/npm/summernote@0.9.1/dist/font/summernote.woff2",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/summernote@0.9.1/dist/font/summernote.woff2",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/summernote@0.9.1/dist/summernote-lite.min.js": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/summernote@0.9.1/dist/summernote-lite.min.js",
+        "asset_path": "https://cdn.jsdelivr.net/npm/summernote@0.9.1/dist/summernote-lite.min.js",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/summernote@0.9.1/dist/summernote-lite.min.js",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.datatables.net/buttons/3.2.0/js/dataTables.buttons.min.js": {
+        "asset_name": "https://cdn.datatables.net/buttons/3.2.0/js/dataTables.buttons.min.js",
+        "asset_path": "https://cdn.datatables.net/buttons/3.2.0/js/dataTables.buttons.min.js",
+        "asset_disk_path": "basset/cdn.datatables.net/buttons/3.2.0/js/dataTables.buttons.min.js",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.datatables.net/buttons/3.2.0/js/buttons.bootstrap5.min.js": {
+        "asset_name": "https://cdn.datatables.net/buttons/3.2.0/js/buttons.bootstrap5.min.js",
+        "asset_path": "https://cdn.datatables.net/buttons/3.2.0/js/buttons.bootstrap5.min.js",
+        "asset_disk_path": "basset/cdn.datatables.net/buttons/3.2.0/js/buttons.bootstrap5.min.js",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js": {
+        "asset_name": "https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js",
+        "asset_path": "https://cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js",
+        "asset_disk_path": "basset/cdnjs.cloudflare.com/ajax/libs/jszip/2.5.0/jszip.min.js",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.18/pdfmake.min.js": {
+        "asset_name": "https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.18/pdfmake.min.js",
+        "asset_path": "https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.18/pdfmake.min.js",
+        "asset_disk_path": "basset/cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.18/pdfmake.min.js",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.18/vfs_fonts.js": {
+        "asset_name": "https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.18/vfs_fonts.js",
+        "asset_path": "https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.18/vfs_fonts.js",
+        "asset_disk_path": "basset/cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.18/vfs_fonts.js",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.datatables.net/buttons/3.2.0/js/buttons.html5.min.js": {
+        "asset_name": "https://cdn.datatables.net/buttons/3.2.0/js/buttons.html5.min.js",
+        "asset_path": "https://cdn.datatables.net/buttons/3.2.0/js/buttons.html5.min.js",
+        "asset_disk_path": "basset/cdn.datatables.net/buttons/3.2.0/js/buttons.html5.min.js",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.datatables.net/buttons/3.2.0/js/buttons.print.min.js": {
+        "asset_name": "https://cdn.datatables.net/buttons/3.2.0/js/buttons.print.min.js",
+        "asset_path": "https://cdn.datatables.net/buttons/3.2.0/js/buttons.print.min.js",
+        "asset_disk_path": "basset/cdn.datatables.net/buttons/3.2.0/js/buttons.print.min.js",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.datatables.net/buttons/3.2.0/js/buttons.colVis.min.js": {
+        "asset_name": "https://cdn.datatables.net/buttons/3.2.0/js/buttons.colVis.min.js",
+        "asset_path": "https://cdn.datatables.net/buttons/3.2.0/js/buttons.colVis.min.js",
+        "asset_disk_path": "basset/cdn.datatables.net/buttons/3.2.0/js/buttons.colVis.min.js",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.datatables.net/buttons/3.2.0/css/buttons.bootstrap5.min.css": {
+        "asset_name": "https://cdn.datatables.net/buttons/3.2.0/css/buttons.bootstrap5.min.css",
+        "asset_path": "https://cdn.datatables.net/buttons/3.2.0/css/buttons.bootstrap5.min.css",
+        "asset_disk_path": "basset/cdn.datatables.net/buttons/3.2.0/css/buttons.bootstrap5.min.css",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/jquery-ui@1.13.2/dist/jquery-ui.min.js": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/jquery-ui@1.13.2/dist/jquery-ui.min.js",
+        "asset_path": "https://cdn.jsdelivr.net/npm/jquery-ui@1.13.2/dist/jquery-ui.min.js",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/jquery-ui@1.13.2/dist/jquery-ui.min.js",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "C:\\wamp64\\www\\jaume-balmes-backend\\vendor/backpack/crud/src/resources/assets/libs/jquery.mjs.nestedSortable2.js": {
+        "asset_name": "C:\\wamp64\\www\\jaume-balmes-backend\\vendor/backpack/crud/src/resources/assets/libs/jquery.mjs.nestedSortable2.js",
+        "asset_path": "C:\\wamp64\\www\\jaume-balmes-backend\\vendor/backpack/crud/src/resources/assets/libs/jquery.mjs.nestedSortable2.js",
+        "asset_disk_path": "basset/vendor/backpack/crud/src/resources/assets/libs/jquery.mjs.nestedSortable2.js",
+        "asset_attributes": [],
+        "asset_content_hash": "c4616f9b"
+    },
+    "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/ionicons-1.5.2/css/ionicons.min.css": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/ionicons-1.5.2/css/ionicons.min.css",
+        "asset_path": "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/ionicons-1.5.2/css/ionicons.min.css",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/ionicons-1.5.2/css/ionicons.min.css",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/ionicons-1.5.2/fonts/ionicons.woff": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/ionicons-1.5.2/fonts/ionicons.woff",
+        "asset_path": "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/ionicons-1.5.2/fonts/ionicons.woff",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/ionicons-1.5.2/fonts/ionicons.woff",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/weather-icons-1.2.0/css/weather-icons.min.css": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/weather-icons-1.2.0/css/weather-icons.min.css",
+        "asset_path": "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/weather-icons-1.2.0/css/weather-icons.min.css",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/weather-icons-1.2.0/css/weather-icons.min.css",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/weather-icons-1.2.0/fonts/weathericons-regular-webfont.woff": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/weather-icons-1.2.0/fonts/weathericons-regular-webfont.woff",
+        "asset_path": "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/weather-icons-1.2.0/fonts/weathericons-regular-webfont.woff",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/weather-icons-1.2.0/fonts/weathericons-regular-webfont.woff",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/map-icons-2.1.0/css/map-icons.min.css": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/map-icons-2.1.0/css/map-icons.min.css",
+        "asset_path": "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/map-icons-2.1.0/css/map-icons.min.css",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/map-icons-2.1.0/css/map-icons.min.css",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/map-icons-2.1.0/fonts/map-icons.woff": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/map-icons-2.1.0/fonts/map-icons.woff",
+        "asset_path": "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/map-icons-2.1.0/fonts/map-icons.woff",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/map-icons-2.1.0/fonts/map-icons.woff",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/octicons-2.1.2/css/octicons.min.css": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/octicons-2.1.2/css/octicons.min.css",
+        "asset_path": "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/octicons-2.1.2/css/octicons.min.css",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/octicons-2.1.2/css/octicons.min.css",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/octicons-2.1.2/fonts/octicons.woff": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/octicons-2.1.2/fonts/octicons.woff",
+        "asset_path": "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/octicons-2.1.2/fonts/octicons.woff",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/octicons-2.1.2/fonts/octicons.woff",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/typicons-2.0.6/css/typicons.min.css": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/typicons-2.0.6/css/typicons.min.css",
+        "asset_path": "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/typicons-2.0.6/css/typicons.min.css",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/typicons-2.0.6/css/typicons.min.css",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/typicons-2.0.6/fonts/typicons.woff": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/typicons-2.0.6/fonts/typicons.woff",
+        "asset_path": "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/typicons-2.0.6/fonts/typicons.woff",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/typicons-2.0.6/fonts/typicons.woff",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/elusive-icons-2.0.0/css/elusive-icons.min.css": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/elusive-icons-2.0.0/css/elusive-icons.min.css",
+        "asset_path": "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/elusive-icons-2.0.0/css/elusive-icons.min.css",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/elusive-icons-2.0.0/css/elusive-icons.min.css",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/elusive-icons-2.0.0/fonts/Elusive-Icons.woff": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/elusive-icons-2.0.0/fonts/Elusive-Icons.woff",
+        "asset_path": "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/elusive-icons-2.0.0/fonts/Elusive-Icons.woff",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/elusive-icons-2.0.0/fonts/Elusive-Icons.woff",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/material-design-1.1.1/css/material-design-iconic-font.min.css": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/material-design-1.1.1/css/material-design-iconic-font.min.css",
+        "asset_path": "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/material-design-1.1.1/css/material-design-iconic-font.min.css",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/material-design-1.1.1/css/material-design-iconic-font.min.css",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/material-design-1.1.1/fonts/Material-Design-Iconic-Font.woff": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/material-design-1.1.1/fonts/Material-Design-Iconic-Font.woff",
+        "asset_path": "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/material-design-1.1.1/fonts/Material-Design-Iconic-Font.woff",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/bootstrap-iconpicker@1.8.2/icon-fonts/material-design-1.1.1/fonts/Material-Design-Iconic-Font.woff",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css": {
+        "asset_name": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css",
+        "asset_path": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css",
+        "asset_disk_path": "basset/cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2": {
+        "asset_name": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2",
+        "asset_path": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2",
+        "asset_disk_path": "basset/cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-brands-400.woff2": {
+        "asset_name": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-brands-400.woff2",
+        "asset_path": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-brands-400.woff2",
+        "asset_disk_path": "basset/cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-brands-400.woff2",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-regular-400.woff2": {
+        "asset_name": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-regular-400.woff2",
+        "asset_path": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-regular-400.woff2",
+        "asset_disk_path": "basset/cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-regular-400.woff2",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/cropperjs@1.5.13/dist/cropper.min.css": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/cropperjs@1.5.13/dist/cropper.min.css",
+        "asset_path": "https://cdn.jsdelivr.net/npm/cropperjs@1.5.13/dist/cropper.min.css",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/cropperjs@1.5.13/dist/cropper.min.css",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/cropperjs@1.5.13/dist/cropper.min.js": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/cropperjs@1.5.13/dist/cropper.min.js",
+        "asset_path": "https://cdn.jsdelivr.net/npm/cropperjs@1.5.13/dist/cropper.min.js",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/cropperjs@1.5.13/dist/cropper.min.js",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/jquery-cropper@1.0.1/dist/jquery-cropper.min.js": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/jquery-cropper@1.0.1/dist/jquery-cropper.min.js",
+        "asset_path": "https://cdn.jsdelivr.net/npm/jquery-cropper@1.0.1/dist/jquery-cropper.min.js",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/jquery-cropper@1.0.1/dist/jquery-cropper.min.js",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/bootstrap-datepicker@1.9.0/dist/css/bootstrap-datepicker3.min.css": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/bootstrap-datepicker@1.9.0/dist/css/bootstrap-datepicker3.min.css",
+        "asset_path": "https://cdn.jsdelivr.net/npm/bootstrap-datepicker@1.9.0/dist/css/bootstrap-datepicker3.min.css",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/bootstrap-datepicker@1.9.0/dist/css/bootstrap-datepicker3.min.css",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/pc-bootstrap4-datetimepicker@4.17.51/build/css/bootstrap-datetimepicker.min.css": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/pc-bootstrap4-datetimepicker@4.17.51/build/css/bootstrap-datetimepicker.min.css",
+        "asset_path": "https://cdn.jsdelivr.net/npm/pc-bootstrap4-datetimepicker@4.17.51/build/css/bootstrap-datetimepicker.min.css",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/pc-bootstrap4-datetimepicker@4.17.51/build/css/bootstrap-datetimepicker.min.css",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/moment@2.29.4/min/moment.min.js": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/moment@2.29.4/min/moment.min.js",
+        "asset_path": "https://cdn.jsdelivr.net/npm/moment@2.29.4/min/moment.min.js",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/moment@2.29.4/min/moment.min.js",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/pc-bootstrap4-datetimepicker@4.17.51/build/js/bootstrap-datetimepicker.min.js": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/pc-bootstrap4-datetimepicker@4.17.51/build/js/bootstrap-datetimepicker.min.js",
+        "asset_path": "https://cdn.jsdelivr.net/npm/pc-bootstrap4-datetimepicker@4.17.51/build/js/bootstrap-datetimepicker.min.js",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/pc-bootstrap4-datetimepicker@4.17.51/build/js/bootstrap-datetimepicker.min.js",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/moment@2.29.4/min/locales.min.js": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/moment@2.29.4/min/locales.min.js",
+        "asset_path": "https://cdn.jsdelivr.net/npm/moment@2.29.4/min/locales.min.js",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/moment@2.29.4/min/locales.min.js",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/bootstrap-datepicker@1.9.0/dist/js/bootstrap-datepicker.min.js": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/bootstrap-datepicker@1.9.0/dist/js/bootstrap-datepicker.min.js",
+        "asset_path": "https://cdn.jsdelivr.net/npm/bootstrap-datepicker@1.9.0/dist/js/bootstrap-datepicker.min.js",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/bootstrap-datepicker@1.9.0/dist/js/bootstrap-datepicker.min.js",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/bootstrap-daterangepicker@3.1.0/daterangepicker.css": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/bootstrap-daterangepicker@3.1.0/daterangepicker.css",
+        "asset_path": "https://cdn.jsdelivr.net/npm/bootstrap-daterangepicker@3.1.0/daterangepicker.css",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/bootstrap-daterangepicker@3.1.0/daterangepicker.css",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/moment@2.29.4/min/moment-with-locales.min.js": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/moment@2.29.4/min/moment-with-locales.min.js",
+        "asset_path": "https://cdn.jsdelivr.net/npm/moment@2.29.4/min/moment-with-locales.min.js",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/moment@2.29.4/min/moment-with-locales.min.js",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/bootstrap-daterangepicker@3.1.0/daterangepicker.js": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/bootstrap-daterangepicker@3.1.0/daterangepicker.js",
+        "asset_path": "https://cdn.jsdelivr.net/npm/bootstrap-daterangepicker@3.1.0/daterangepicker.js",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/bootstrap-daterangepicker@3.1.0/daterangepicker.js",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/dropzone@6.0.0-beta.2/dist/dropzone.css": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/dropzone@6.0.0-beta.2/dist/dropzone.css",
+        "asset_path": "https://cdn.jsdelivr.net/npm/dropzone@6.0.0-beta.2/dist/dropzone.css",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/dropzone@6.0.0-beta.2/dist/dropzone.css",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/dropzone@6.0.0-beta.2/dist/dropzone-min.js": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/dropzone@6.0.0-beta.2/dist/dropzone-min.js",
+        "asset_path": "https://cdn.jsdelivr.net/npm/dropzone@6.0.0-beta.2/dist/dropzone-min.js",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/dropzone@6.0.0-beta.2/dist/dropzone-min.js",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js",
+        "asset_path": "https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/easymde@2.18.0/dist/easymde.min.css": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/easymde@2.18.0/dist/easymde.min.css",
+        "asset_path": "https://cdn.jsdelivr.net/npm/easymde@2.18.0/dist/easymde.min.css",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/easymde@2.18.0/dist/easymde.min.css",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/easymde@2.18.0/dist/easymde.min.js": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/easymde@2.18.0/dist/easymde.min.js",
+        "asset_path": "https://cdn.jsdelivr.net/npm/easymde@2.18.0/dist/easymde.min.js",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/easymde@2.18.0/dist/easymde.min.js",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker-latest@1.12.0/dist/css/bootstrap-iconpicker.min.css": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker-latest@1.12.0/dist/css/bootstrap-iconpicker.min.css",
+        "asset_path": "https://cdn.jsdelivr.net/npm/bootstrap-iconpicker-latest@1.12.0/dist/css/bootstrap-iconpicker.min.css",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/bootstrap-iconpicker-latest@1.12.0/dist/css/bootstrap-iconpicker.min.css",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "C:\\wamp64\\www\\jaume-balmes-backend\\vendor/backpack/pro/resources/assets/js/icon-picker.js": {
+        "asset_name": "C:\\wamp64\\www\\jaume-balmes-backend\\vendor/backpack/pro/resources/assets/js/icon-picker.js",
+        "asset_path": "C:\\wamp64\\www\\jaume-balmes-backend\\vendor/backpack/pro/resources/assets/js/icon-picker.js",
+        "asset_disk_path": "basset/vendor/backpack/pro/resources/assets/js/icon-picker.js",
+        "asset_attributes": [],
+        "asset_content_hash": "6111cb67"
+    },
+    "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/flags.png": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/flags.png",
+        "asset_path": "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/flags.png",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/flags.png",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/flags@2x.png": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/flags@2x.png",
+        "asset_path": "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/flags@2x.png",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/flags@2x.png",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/flags.webp": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/flags.webp",
+        "asset_path": "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/flags.webp",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/flags.webp",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/flags@2x.webp": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/flags@2x.webp",
+        "asset_path": "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/flags@2x.webp",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/flags@2x.webp",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/globe.webp": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/globe.webp",
+        "asset_path": "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/globe.webp",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/globe.webp",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/globe@2x.webp": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/globe@2x.webp",
+        "asset_path": "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/globe@2x.webp",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/globe@2x.webp",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/globe.png": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/globe.png",
+        "asset_path": "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/globe.png",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/globe.png",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/globe@2x.png": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/globe@2x.png",
+        "asset_path": "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/globe@2x.png",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/globe@2x.png",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/globe_light.webp": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/globe_light.webp",
+        "asset_path": "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/globe_light.webp",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/globe_light.webp",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/globe_light@2x.webp": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/globe_light@2x.webp",
+        "asset_path": "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/globe_light@2x.webp",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/globe_light@2x.webp",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/globe_light.png": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/globe_light.png",
+        "asset_path": "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/globe_light.png",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/globe_light.png",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/globe_light@2x.png": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/globe_light@2x.png",
+        "asset_path": "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/globe_light@2x.png",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/img/globe_light@2x.png",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/css/intlTelInput.min.css": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/css/intlTelInput.min.css",
+        "asset_path": "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/css/intlTelInput.min.css",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/css/intlTelInput.min.css",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/js/intlTelInput.min.js": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/js/intlTelInput.min.js",
+        "asset_path": "https://cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/js/intlTelInput.min.js",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/intl-tel-input@24.4.0/build/js/intlTelInput.min.js",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css",
+        "asset_path": "https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/select2-bootstrap-theme@0.1.0-beta.10/dist/select2-bootstrap.min.css": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/select2-bootstrap-theme@0.1.0-beta.10/dist/select2-bootstrap.min.css",
+        "asset_path": "https://cdn.jsdelivr.net/npm/select2-bootstrap-theme@0.1.0-beta.10/dist/select2-bootstrap.min.css",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/select2-bootstrap-theme@0.1.0-beta.10/dist/select2-bootstrap.min.css",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js",
+        "asset_path": "https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.full.min.js",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/i18n/ca.js": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/i18n/ca.js",
+        "asset_path": "https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/i18n/ca.js",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/i18n/ca.js",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js",
+        "asset_path": "https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/select2@4.0.13/dist/js/select2.min.js",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/jquery-ui-touch-punch@0.2.3/jquery.ui.touch-punch.min.js": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/jquery-ui-touch-punch@0.2.3/jquery.ui.touch-punch.min.js",
+        "asset_path": "https://cdn.jsdelivr.net/npm/jquery-ui-touch-punch@0.2.3/jquery.ui.touch-punch.min.js",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/jquery-ui-touch-punch@0.2.3/jquery.ui.touch-punch.min.js",
+        "asset_attributes": [],
+        "asset_content_hash": ""
+    },
+    "https://cdn.jsdelivr.net/npm/slugify@1.6.6/slugify.min.js": {
+        "asset_name": "https://cdn.jsdelivr.net/npm/slugify@1.6.6/slugify.min.js",
+        "asset_path": "https://cdn.jsdelivr.net/npm/slugify@1.6.6/slugify.min.js",
+        "asset_disk_path": "basset/cdn.jsdelivr.net/npm/slugify@1.6.6/slugify.min.js",
+        "asset_attributes": [],
+        "asset_content_hash": ""
     }
 }
