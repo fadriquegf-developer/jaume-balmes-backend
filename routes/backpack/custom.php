@@ -19,7 +19,7 @@ Route::group([
     ),
     'namespace' => 'App\Http\Controllers\Admin',
 ], function () { // custom admin routes
-     // Dashboard General (futur)
+    // Dashboard General (futur)
     Route::get('dashboard', [DashboardController::class, 'index'])->name('backpack.dashboard');
     // Dashboard Inscripcions (Portes Obertes)
     Route::get('open-doors/dashboard', [OpenDoorsDashboardController::class, 'index'])->name('open-doors.dashboard');
@@ -28,6 +28,15 @@ Route::group([
 
     Route::crud('open-door-session', 'OpenDoorSessionCrudController');
     Route::crud('open-door-registration', 'OpenDoorRegistrationCrudController');
+
+    // Post-Visit Surveys
+    Route::crud('post-visit-survey', 'PostVisitSurveyCrudController');
+    Route::get('post-visit-survey/send-surveys', [App\Http\Controllers\Admin\PostVisitSurveyCrudController::class, 'sendSurveys'])
+        ->name('post-visit-survey.send-surveys');
+
+    // Post-Visit Dashboard
+    Route::get('post-visit/dashboard', [App\Http\Controllers\Admin\PostVisitSurveyDashboardController::class, 'index'])
+        ->name('post-visit.dashboard');
 }); // this should be the absolute last line of this file
 
 /**

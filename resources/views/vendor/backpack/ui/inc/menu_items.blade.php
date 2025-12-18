@@ -17,10 +17,11 @@
         :link="backpack_url('open-doors/dashboard')" />
     <x-backpack::menu-dropdown-item title="{{ __('menu.sessions') }}" icon="la la-calendar" :link="backpack_url('open-door-session')" />
     <x-backpack::menu-dropdown-item title="{{ __('menu.registrations') }}" icon="la la-users" :link="backpack_url('open-door-registration')" />
-    <x-backpack::menu-dropdown-item title="{{ __('menu.post_visit') }}" icon="la la-clipboard-check"
+    <x-backpack::menu-dropdown-header title="{{ __('menu.post_visit_section') }}" />
+    <x-backpack::menu-dropdown-item title="{{ __('menu.post_visit_dashboard') }}" icon="la la-chart-pie"
+        :link="backpack_url('post-visit/dashboard')" />
+    <x-backpack::menu-dropdown-item title="{{ __('menu.post_visit_surveys') }}" icon="la la-clipboard-check"
         :link="backpack_url('post-visit-survey')" />
-    <x-backpack::menu-dropdown-item title="{{ __('menu.conversion_analysis') }}" icon="la la-chart-pie"
-        :link="backpack_url('conversion-analysis')" />
 </x-backpack::menu-dropdown>
 
 {{-- MÒDUL 3: Substitucions --}}

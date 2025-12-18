@@ -49,4 +49,9 @@ return [
 
     // Altres
     'reports' => 'Informes',
+
+    // Post-Visita
+    'post_visit_section' => '── Seguiment ──',
+    'post_visit_dashboard' => 'Dashboard Satisfacció',
+    'post_visit_surveys' => 'Enquestes',
 ];

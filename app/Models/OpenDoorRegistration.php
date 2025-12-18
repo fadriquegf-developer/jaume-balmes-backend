@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Str;
 use App\Mail\OpenDoorRegistrationConfirmation;
+use Illuminate\Database\Eloquent\Relations\HasOne;
 use Illuminate\Support\Facades\Mail;
 
 class OpenDoorRegistration extends Model
@@ -71,6 +72,11 @@ class OpenDoorRegistration extends Model
     public function session()
     {
         return $this->belongsTo(OpenDoorSession::class, 'open_door_session_id');
+    }
+
+    public function postVisitSurvey(): HasOne
+    {
+        return $this->hasOne(PostVisitSurvey::class);
     }
 
     // Accessors

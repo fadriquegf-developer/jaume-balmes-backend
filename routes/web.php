@@ -22,3 +22,12 @@ Route::prefix('api/open-doors')->group(function () {
     Route::get('/sessions', [PublicOpenDoorController::class, 'apiGetSessions']);
     Route::post('/register', [PublicOpenDoorController::class, 'apiSubmit']);
 });
+
+
+// Post-Visit Survey
+Route::get('/enquesta-visita/{token}', [App\Http\Controllers\PostVisitSurveyController::class, 'show'])
+    ->name('post-visit.survey');
+Route::post('/enquesta-visita/{token}', [App\Http\Controllers\PostVisitSurveyController::class, 'submit'])
+    ->name('post-visit.submit');
+Route::get('/enquesta-visita/{token}/gracies', [App\Http\Controllers\PostVisitSurveyController::class, 'thanks'])
+    ->name('post-visit.thanks');
