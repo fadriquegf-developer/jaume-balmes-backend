@@ -185,6 +185,8 @@ class OpenDoorRegistrationTest extends TestCase
             ]);
         });
 
+        $initialCount = $session->registered_count;
+
         $response = $this->get("/portes-obertes/cancelar/{$registration->confirmation_token}");
 
         $response->assertStatus(200);
@@ -193,9 +195,9 @@ class OpenDoorRegistrationTest extends TestCase
         $registration->refresh();
         $this->assertEquals('cancelled', $registration->status);
 
-        // Verificar que el comptador s'ha decrementat
+        // Verificar que el comptador s'ha decrementat (només 1 vegada)
         $session->refresh();
-        $this->assertEquals(4, $session->registered_count);
+        $this->assertEquals($initialCount - 1, $session->registered_count);
     }
 
     public function test_student_full_name_accessor(): void

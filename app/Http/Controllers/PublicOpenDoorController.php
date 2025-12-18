@@ -207,10 +207,10 @@ class PublicOpenDoorController extends Controller
     {
         $registration = OpenDoorRegistration::where('confirmation_token', $token)->firstOrFail();
 
-        if (in_array($registration->status, ['pending', 'confirmed'])) {
-            $registration->update(['status' => 'cancelled']);
-            $registration->session->decrement('registered_count');
-        }
+        // Només actualitzar l'estat - el model s'encarrega de decrementar
+        $registration->update([
+            'status' => 'cancelled',
+        ]);
 
         return view('public.open-doors.cancelled', compact('registration'));
     }
