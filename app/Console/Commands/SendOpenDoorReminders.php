@@ -10,24 +10,29 @@ use Illuminate\Support\Facades\Mail;
 class SendOpenDoorReminders extends Command
 {
     protected $signature = 'open-doors:send-reminders';
-    protected $description = 'Envia recordatoris per les sessions de portes obertes (7 dies abans)';
+    protected $description = 'Envia recordatoris als inscrits amb sessions en 7 dies';
 
-    public function handle()
+    public function handle(): int
     {
         $targetDate = now()->addDays(7)->toDateString();
 
-        $registrations = OpenDoorRegistration::whereHas('session', function ($query) use ($targetDate) {
-            $query->where('session_date', $targetDate);
-        })
-            ->where('status', 'confirmed')
+        $registrations = OpenDoorRegistration::where('status', 'confirmed')
+            ->whereHas('session', function ($query) use ($targetDate) {
+                $query->whereDate('session_date', $targetDate);
+            })
+            ->with('session')
             ->get();
 
         $count = 0;
         foreach ($registrations as $registration) {
-            Mail::to($registration->tutor_email)->send(new OpenDoorReminder($registration));
+            Mail::to($registration->tutor_email)
+                ->queue(new OpenDoorReminder($registration));
             $count++;
+            $this->info("Recordatori enviat a: {$registration->tutor_email}");
         }
 
-        $this->info("S'han enviat {$count} recordatoris.");
+        $this->info("Total: {$count} recordatoris enviats.");
+
+        return Command::SUCCESS;
     }
 }

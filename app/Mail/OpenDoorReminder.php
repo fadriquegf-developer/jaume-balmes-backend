@@ -21,7 +21,7 @@ class OpenDoorReminder extends Mailable implements ShouldQueue
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: __('open_doors.email_reminder_subject', [
+            subject: __('open_doors.reminder_subject', [
                 'date' => $this->registration->session->session_date->format('d/m/Y')
             ]),
         );

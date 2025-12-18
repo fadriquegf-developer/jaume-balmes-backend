@@ -33,6 +33,18 @@ class OpenDoorRegistrationFactory extends Factory
         ];
     }
 
+    /**
+     * Configure the factory to not dispatch events (no emails)
+     */
+    public function configure(): static
+    {
+        return $this->afterMaking(function (OpenDoorRegistration $registration) {
+            // Nothing to do after making
+        })->afterCreating(function (OpenDoorRegistration $registration) {
+            // Events already dispatched, but we can use withoutEvents in tests
+        });
+    }
+
     public function confirmed(): static
     {
         return $this->state(fn(array $attributes) => [

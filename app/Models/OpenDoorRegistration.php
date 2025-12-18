@@ -49,21 +49,28 @@ class OpenDoorRegistration extends Model
         parent::boot();
 
         static::creating(function ($registration) {
-            $registration->confirmation_token = \Illuminate\Support\Str::uuid();
+            if (empty($registration->confirmation_token)) {
+                $registration->confirmation_token = \Illuminate\Support\Str::uuid();
+            }
         });
 
         static::created(function ($registration) {
-            $registration->session->increment('registered_count');
+            // Incrementar comptador de la sessió
+            $registration->session()->increment('registered_count');
 
             // Enviar email de confirmació
-            Mail::to($registration->tutor_email)->send(
-                new OpenDoorRegistrationConfirmation($registration)
-            );
+            \Illuminate\Support\Facades\Mail::to($registration->tutor_email)
+                ->queue(new \App\Mail\OpenDoorRegistrationConfirmation($registration));
         });
 
-        static::deleted(function ($registration) {
-            if ($registration->session) {
-                $registration->session->decrement('registered_count');
+        static::updating(function ($registration) {
+            // Si canvia a 'cancelled', decrementar comptador
+            if ($registration->isDirty('status') && $registration->status === 'cancelled') {
+                $originalStatus = $registration->getOriginal('status');
+                // Només decrementar si abans no estava cancel·lat
+                if ($originalStatus !== 'cancelled') {
+                    $registration->session()->decrement('registered_count');
+                }
             }
         });
     }

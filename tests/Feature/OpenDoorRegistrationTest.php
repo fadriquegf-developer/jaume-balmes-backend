@@ -7,6 +7,7 @@ use App\Models\OpenDoorRegistration;
 use App\Models\OpenDoorSession;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Str;
 use Tests\TestCase;
 
 class OpenDoorRegistrationTest extends TestCase
@@ -118,12 +119,8 @@ class OpenDoorRegistrationTest extends TestCase
             'privacy_accepted' => true,
         ]);
 
-        // Pot redirigir amb error o mostrar error de validació
-        // Depèn de com estigui implementat el controller
-        $this->assertTrue(
-            $response->isRedirect() || $response->status() === 422,
-            'Should reject registration to full session'
-        );
+        // Ha de redirigir enrere amb errors
+        $response->assertSessionHasErrors('open_door_session_id');
 
         // No s'hauria d'haver creat la inscripció
         $this->assertDatabaseMissing('open_door_registrations', [
@@ -136,10 +133,22 @@ class OpenDoorRegistrationTest extends TestCase
         Mail::fake();
 
         $session = OpenDoorSession::factory()->create();
-        $registration = OpenDoorRegistration::factory()->create([
-            'open_door_session_id' => $session->id,
-            'status' => 'pending',
-        ]);
+
+        // Crear registre sense disparar events
+        $registration = OpenDoorRegistration::withoutEvents(function () use ($session) {
+            return OpenDoorRegistration::create([
+                'open_door_session_id' => $session->id,
+                'student_name' => 'Test',
+                'student_surname' => 'Student',
+                'tutor_name' => 'Test',
+                'tutor_surname' => 'Tutor',
+                'tutor_email' => 'test@example.com',
+                'tutor_phone' => '612345678',
+                'tutor_relationship' => 'mother',
+                'status' => 'pending',
+                'confirmation_token' => Str::uuid(),
+            ]);
+        });
 
         $response = $this->get("/portes-obertes/confirmar/{$registration->confirmation_token}");
 
@@ -159,9 +168,22 @@ class OpenDoorRegistrationTest extends TestCase
             'registered_count' => 5,
         ]);
 
-        $registration = OpenDoorRegistration::factory()->confirmed()->create([
-            'open_door_session_id' => $session->id,
-        ]);
+        // Crear registre sense disparar events
+        $registration = OpenDoorRegistration::withoutEvents(function () use ($session) {
+            return OpenDoorRegistration::create([
+                'open_door_session_id' => $session->id,
+                'student_name' => 'Test',
+                'student_surname' => 'Student',
+                'tutor_name' => 'Test',
+                'tutor_surname' => 'Tutor',
+                'tutor_email' => 'test@example.com',
+                'tutor_phone' => '612345678',
+                'tutor_relationship' => 'mother',
+                'status' => 'confirmed',
+                'confirmed_at' => now(),
+                'confirmation_token' => Str::uuid(),
+            ]);
+        });
 
         $response = $this->get("/portes-obertes/cancelar/{$registration->confirmation_token}");
 
@@ -178,10 +200,12 @@ class OpenDoorRegistrationTest extends TestCase
 
     public function test_student_full_name_accessor(): void
     {
-        $registration = OpenDoorRegistration::factory()->create([
-            'student_name' => 'Marc',
-            'student_surname' => 'García López',
-        ]);
+        $registration = OpenDoorRegistration::withoutEvents(function () {
+            return OpenDoorRegistration::factory()->create([
+                'student_name' => 'Marc',
+                'student_surname' => 'García López',
+            ]);
+        });
 
         $this->assertEquals('Marc García López', $registration->student_full_name);
     }

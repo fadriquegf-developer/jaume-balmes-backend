@@ -26,20 +26,45 @@ class PublicOpenDoorController extends Controller
      */
     public function submitForm(Request $request)
     {
-        $validator = $this->validateRegistration($request);
+        $validated = $request->validate([
+            'open_door_session_id' => 'required|exists:open_door_sessions,id',
+            'student_name' => 'required|string|max:255',
+            'student_surname' => 'required|string|max:255',
+            'student_birthdate' => 'nullable|date',
+            'current_school' => 'nullable|string|max:255',
+            'current_grade' => 'nullable|string|max:255',
+            'tutor_name' => 'required|string|max:255',
+            'tutor_surname' => 'required|string|max:255',
+            'tutor_email' => 'required|email|max:255',
+            'tutor_phone' => 'required|string|max:20',
+            'tutor_relationship' => 'required|in:father,mother,tutor,other',
+            'interested_grades' => 'nullable|array',
+            'how_did_you_know' => 'nullable|string|max:255',
+            'comments' => 'nullable|string|max:1000',
+            'privacy_accepted' => 'accepted',
+        ]);
 
-        if ($validator->fails()) {
-            return redirect()
-                ->back()
-                ->withErrors($validator)
-                ->withInput();
+        // Verificar que la sessió no estigui plena
+        $session = \App\Models\OpenDoorSession::findOrFail($validated['open_door_session_id']);
+
+        if ($session->is_full) {
+            return back()->withErrors([
+                'open_door_session_id' => __('open_doors.session_full'),
+            ])->withInput();
         }
 
-        $registration = $this->createRegistration($request);
+        // Verificar que la sessió estigui publicada i activa
+        if ($session->status !== 'published' || !$session->is_active) {
+            return back()->withErrors([
+                'open_door_session_id' => __('open_doors.session_not_available'),
+            ])->withInput();
+        }
 
-        return redirect()
-            ->route('open-doors.success')
-            ->with('registration', $registration);
+        unset($validated['privacy_accepted']);
+
+        $registration = \App\Models\OpenDoorRegistration::create($validated);
+
+        return redirect()->route('open-doors.success');
     }
 
     /**

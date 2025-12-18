@@ -7,6 +7,7 @@ use App\Models\OpenDoorRegistration;
 use App\Models\OpenDoorSession;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Str;
 use Tests\TestCase;
 
 class OpenDoorReminderTest extends TestCase
@@ -22,10 +23,22 @@ class OpenDoorReminderTest extends TestCase
             'status' => 'published',
         ]);
 
-        $registration = OpenDoorRegistration::factory()->confirmed()->create([
-            'open_door_session_id' => $session->id,
-            'tutor_email' => 'reminder@test.com',
-        ]);
+        // Crear registre sense disparar events
+        OpenDoorRegistration::withoutEvents(function () use ($session) {
+            return OpenDoorRegistration::create([
+                'open_door_session_id' => $session->id,
+                'student_name' => 'Test',
+                'student_surname' => 'Student',
+                'tutor_name' => 'Test',
+                'tutor_surname' => 'Tutor',
+                'tutor_email' => 'reminder@test.com',
+                'tutor_phone' => '612345678',
+                'tutor_relationship' => 'mother',
+                'status' => 'confirmed',
+                'confirmed_at' => now(),
+                'confirmation_token' => Str::uuid(),
+            ]);
+        });
 
         $this->artisan('open-doors:send-reminders')
             ->assertExitCode(0);
@@ -43,10 +56,20 @@ class OpenDoorReminderTest extends TestCase
             'session_date' => now()->addDays(7)->toDateString(),
         ]);
 
-        OpenDoorRegistration::factory()->create([
-            'open_door_session_id' => $session->id,
-            'status' => 'pending',
-        ]);
+        OpenDoorRegistration::withoutEvents(function () use ($session) {
+            return OpenDoorRegistration::create([
+                'open_door_session_id' => $session->id,
+                'student_name' => 'Test',
+                'student_surname' => 'Student',
+                'tutor_name' => 'Test',
+                'tutor_surname' => 'Tutor',
+                'tutor_email' => 'pending@test.com',
+                'tutor_phone' => '612345678',
+                'tutor_relationship' => 'mother',
+                'status' => 'pending',
+                'confirmation_token' => Str::uuid(),
+            ]);
+        });
 
         $this->artisan('open-doors:send-reminders');
 
@@ -61,9 +84,20 @@ class OpenDoorReminderTest extends TestCase
             'session_date' => now()->addDays(7)->toDateString(),
         ]);
 
-        OpenDoorRegistration::factory()->cancelled()->create([
-            'open_door_session_id' => $session->id,
-        ]);
+        OpenDoorRegistration::withoutEvents(function () use ($session) {
+            return OpenDoorRegistration::create([
+                'open_door_session_id' => $session->id,
+                'student_name' => 'Test',
+                'student_surname' => 'Student',
+                'tutor_name' => 'Test',
+                'tutor_surname' => 'Tutor',
+                'tutor_email' => 'cancelled@test.com',
+                'tutor_phone' => '612345678',
+                'tutor_relationship' => 'mother',
+                'status' => 'cancelled',
+                'confirmation_token' => Str::uuid(),
+            ]);
+        });
 
         $this->artisan('open-doors:send-reminders');
 
@@ -78,9 +112,21 @@ class OpenDoorReminderTest extends TestCase
             'session_date' => now()->addDays(5)->toDateString(),
         ]);
 
-        OpenDoorRegistration::factory()->confirmed()->create([
-            'open_door_session_id' => $session->id,
-        ]);
+        OpenDoorRegistration::withoutEvents(function () use ($session) {
+            return OpenDoorRegistration::create([
+                'open_door_session_id' => $session->id,
+                'student_name' => 'Test',
+                'student_surname' => 'Student',
+                'tutor_name' => 'Test',
+                'tutor_surname' => 'Tutor',
+                'tutor_email' => 'notyet@test.com',
+                'tutor_phone' => '612345678',
+                'tutor_relationship' => 'mother',
+                'status' => 'confirmed',
+                'confirmed_at' => now(),
+                'confirmation_token' => Str::uuid(),
+            ]);
+        });
 
         $this->artisan('open-doors:send-reminders');
 

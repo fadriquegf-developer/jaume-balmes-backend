@@ -8,6 +8,7 @@ use App\Models\OpenDoorSession;
 use App\Models\PostVisitSurvey;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\Str;
 use Tests\TestCase;
 
 class PostVisitSurveyTest extends TestCase
@@ -80,10 +81,22 @@ class PostVisitSurveyTest extends TestCase
             'status' => 'completed',
         ]);
 
-        $registration = OpenDoorRegistration::factory()->attended()->create([
-            'open_door_session_id' => $session->id,
-            'tutor_email' => 'attended@test.com',
-        ]);
+        $registration = OpenDoorRegistration::withoutEvents(function () use ($session) {
+            return OpenDoorRegistration::create([
+                'open_door_session_id' => $session->id,
+                'student_name' => 'Test',
+                'student_surname' => 'Student',
+                'tutor_name' => 'Test',
+                'tutor_surname' => 'Tutor',
+                'tutor_email' => 'attended@test.com',
+                'tutor_phone' => '612345678',
+                'tutor_relationship' => 'mother',
+                'status' => 'attended',
+                'confirmed_at' => now()->subDays(7),
+                'attended_at' => now()->subDay(),
+                'confirmation_token' => Str::uuid(),
+            ]);
+        });
 
         $this->artisan('surveys:send-post-visit')
             ->assertExitCode(0);
@@ -106,9 +119,21 @@ class PostVisitSurveyTest extends TestCase
             'session_date' => now()->subDay()->toDateString(),
         ]);
 
-        OpenDoorRegistration::factory()->noShow()->create([
-            'open_door_session_id' => $session->id,
-        ]);
+        OpenDoorRegistration::withoutEvents(function () use ($session) {
+            return OpenDoorRegistration::create([
+                'open_door_session_id' => $session->id,
+                'student_name' => 'Test',
+                'student_surname' => 'Student',
+                'tutor_name' => 'Test',
+                'tutor_surname' => 'Tutor',
+                'tutor_email' => 'noshow@test.com',
+                'tutor_phone' => '612345678',
+                'tutor_relationship' => 'mother',
+                'status' => 'no_show',
+                'confirmed_at' => now()->subDays(7),
+                'confirmation_token' => Str::uuid(),
+            ]);
+        });
 
         $this->artisan('surveys:send-post-visit');
 
