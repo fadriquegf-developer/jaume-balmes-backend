@@ -54,9 +54,10 @@ class PublicOpenDoorController extends Controller
                 return [
                     'id' => $session->id,
                     'title' => $session->title,
-                    'date' => $session->session_date->format('d/m/Y'),
-                    'start_time' => substr($session->start_time, 0, 5),
-                    'end_time' => substr($session->end_time, 0, 5),
+                    'description' => $session->description,
+                    'session_date' => $session->session_date->format('Y-m-d'),
+                    'start_time' => $session->start_time,
+                    'end_time' => $session->end_time,
                     'available_spots' => $session->available_spots,
                     'is_full' => $session->is_full,
                 ];
@@ -64,7 +65,7 @@ class PublicOpenDoorController extends Controller
 
         return response()->json([
             'success' => true,
-            'data' => $sessions,
+            'sessions' => $sessions,
         ]);
     }
 
