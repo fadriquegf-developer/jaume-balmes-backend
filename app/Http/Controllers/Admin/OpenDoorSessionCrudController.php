@@ -36,7 +36,7 @@ class OpenDoorSessionCrudController extends CrudController
                     ? round(($entry->registered_count / $entry->capacity) * 100)
                     : 0;
                 $color = $percentage >= 90 ? 'danger' : ($percentage >= 70 ? 'warning' : 'success');
-                return "<span class='badge bg-{$color}'>{$entry->registered_count}/{$entry->capacity} ({$percentage}%)</span>";
+                return "<span class='badge bg-{$color} text-white'>{$entry->registered_count}/{$entry->capacity} ({$percentage}%)</span>";
             },
             'escaped' => false,
         ]);
@@ -58,7 +58,7 @@ class OpenDoorSessionCrudController extends CrudController
                     'cancelled' => __('open_doors.status_cancelled'),
                     'completed' => __('open_doors.status_completed'),
                 ];
-                return "<span class='badge bg-{$colors[$entry->status]}'>{$labels[$entry->status]}</span>";
+                return "<span class='badge bg-{$colors[$entry->status]} text-white'>{$labels[$entry->status]}</span>";
             },
             'escaped' => false,
         ]);

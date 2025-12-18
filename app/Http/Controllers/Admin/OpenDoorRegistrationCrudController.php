@@ -65,7 +65,7 @@ class OpenDoorRegistrationCrudController extends CrudController
                     'no_show' => __('open_doors.reg_status_no_show'),
                     'cancelled' => __('open_doors.reg_status_cancelled'),
                 ];
-                return "<span class='badge bg-{$colors[$entry->status]}'>{$labels[$entry->status]}</span>";
+                return "<span class='badge bg-{$colors[$entry->status]} text-white'>{$labels[$entry->status]}</span>";
             },
             'escaped' => false,
         ]);

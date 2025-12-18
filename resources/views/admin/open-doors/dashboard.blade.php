@@ -167,9 +167,9 @@
                                             </td>
                                             <td>
                                                 @if ($session->is_full)
-                                                    <span class="badge bg-danger">{{ __('dashboard.full') }}</span>
+                                                    <span class="badge bg-danger text-white">{{ __('dashboard.full') }}</span>
                                                 @else
-                                                    <span class="badge bg-success">{{ $session->available_spots }}
+                                                    <span class="badge bg-success text-white">{{ $session->available_spots }}
                                                         {{ __('dashboard.spots') }}</span>
                                                 @endif
                                             </td>
@@ -228,7 +228,7 @@
                                                         'cancelled' => 'secondary',
                                                     ];
                                                 @endphp
-                                                <span class="badge bg-{{ $statusColors[$registration->status] }}">
+                                                <span class="badge bg-{{ $statusColors[$registration->status] }} text-white">
                                                     {{ __('open_doors.reg_status_' . $registration->status) }}
                                                 </span>
                                             </td>

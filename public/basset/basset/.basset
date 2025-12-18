@@ -781,5 +781,12 @@
         "asset_disk_path": "basset/cdn.jsdelivr.net/npm/slugify@1.6.6/slugify.min.js",
         "asset_attributes": [],
         "asset_content_hash": ""
+    },
+    "C:\\wamp64\\www\\jaume-balmes-backend\\vendor/backpack/theme-tabler/resources/assets/css/skins/dotted-background.css": {
+        "asset_name": "C:\\wamp64\\www\\jaume-balmes-backend\\vendor/backpack/theme-tabler/resources/assets/css/skins/dotted-background.css",
+        "asset_path": "C:\\wamp64\\www\\jaume-balmes-backend\\vendor/backpack/theme-tabler/resources/assets/css/skins/dotted-background.css",
+        "asset_disk_path": "basset/vendor/backpack/theme-tabler/resources/assets/css/skins/dotted-background.css",
+        "asset_attributes": [],
+        "asset_content_hash": "895ed821"
     }
 }

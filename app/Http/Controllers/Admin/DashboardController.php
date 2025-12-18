@@ -43,7 +43,7 @@ class DashboardController extends Controller
 
         if ($sessionsWithoutConfirmations > 0) {
             $alerts[] = [
-                'type' => 'warning',
+                'type' => 'info',
                 'icon' => 'la-door-open',
                 'message' => __('dashboard.alert_pending_confirmations', ['count' => $sessionsWithoutConfirmations]),
                 'link' => backpack_url('open-door-registration') . '?status=pending',
